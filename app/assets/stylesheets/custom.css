@@ -1,2 +1,108 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body{
+    color: #007db8;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    background: #e5e5d5;
+     
+}
+.mon_nav {
+    background: #FFF;
+    height:5em;
+    border-radius: 0;
+    font-size: 1.25em;
+    margin-bottom: 0;
+
+}
+#bs-example-navbar-collapse-1{
+    margin-top: 1em;
+}
+.mon_nav .dropdown li a {
+    color: #007db8;
+}
+.navbar-collapse .nav  li> a {
+     color: #007db8;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #FFF;
+    background-color:#007db8 ;
+
+}
+.navbar-default .navbar-nav > .underline > a:hover, .navbar-default .navbar-nav > .underline > a:focus {
+    color: #007db8;
+    padding-top: 15px;
+    padding-bottom: 2px;
+    border-bottom: solid 1px black;
+    background: #fff;
+}
+.btn-default{
+    color: #fff;
+    background: #007db8;
+    border-radius: 0;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle{
+    color: #fff;
+    background: #065683;
+}
+.mon_slide{
+    height: 438px;
+    margin-top: 0;
+   background: no-repeat center  url("1440px_02_0.jpg")    ;
+}
+h1.title {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5em;
+    width: 100%;
+    margin-top: 200px;
+    text-shadow: 1px 1px #000;
+    text-transform: capitalize;
+    
+}
+p.mon_para{
+    text-align: center;
+    text-shadow: 1px 1px #000;
+    text-transform: capitalize;
+}
+.col-md-3 > .sous-div{
+    position:relative;
+    left: 3px;
+    top: 3px;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: #d5d5d5;
+    border: 1px solid #b5b5b5;
+}
+.col-md-3 > .sous-div > .sous-sous-div{
+     position:relative;
+    left: 3px;
+    top: 3px;
+    z-index: -2;
+     width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+}
+.col-md-3 > .sous-div > .sous-sous-div >.img-container{
+    width:100%;
+    margin:0 auto;
+}
+.col-md-3 > .sous-div > .sous-sous-div >.info-container{
+    background: #fff;
+    width: 100%;
+}
+.col-md-3 > .sous-div > .sous-sous-div >.info-container  h4, p{
+    color: #000;
+    margin-left: 10px;
+    
+}
+
+
+
+
+
+
