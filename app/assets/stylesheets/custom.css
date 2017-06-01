@@ -100,7 +100,12 @@ p.mon_para{
     margin-left: 10px;
     
 }
-
+.unstyled{
+    list-style:none;
+}
+footer{
+    margin-top: 100px;
+}
 
 
 
