@@ -5,7 +5,7 @@ body{
     color: #007db8;
     font-family: "Open Sans",Arial,Helvetica,sans-serif;
     font-weight: bold;
-    background: #e5e5d5;
+    background: #eaf1fc;
      
 }
 .mon_nav {
@@ -30,13 +30,14 @@ body{
     background-color:#007db8 ;
 
 }
-.navbar-default .navbar-nav > .underline > a:hover, .navbar-default .navbar-nav > .underline > a:focus {
+.navbar-default .navbar-nav > li > a.underline:hover, .navbar-default .navbar-nav > li > a.underline:focus  {
     color: #007db8;
     padding-top: 15px;
     padding-bottom: 2px;
     border-bottom: solid 1px black;
     background: #fff;
 }
+
 .btn-default{
     color: #fff;
     background: #007db8;
