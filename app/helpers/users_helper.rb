@@ -6,4 +6,8 @@ gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}"
 image_tag(gravatar_url, alt: user.name, class: "gravatar") 
 end
 
+def user_params
+params.require(:user).permit(:name, :email, :password,:password_confirmation)
+end 
+
 end
