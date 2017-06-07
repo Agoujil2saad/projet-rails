@@ -1,7 +1,6 @@
-<% provide(:title, 'inscription') %> <h1>Sign up</h1>
+<% provide(:title, 'update') %> <h1>Sign up</h1>
 <div class="row">
 <div class="col-md-4 col-md-push-4">
-<%= render 'shared/error_messages', object: f.object %>
 <%= form_for(@user) do |f| %>
 <div class="input-group input-group-lg">
   <span class="input-group-addon" id="sizing-addon1">@</span>
@@ -23,7 +22,7 @@
   <span class="input-group-addon" id="sizing-addon1">@</span>
   <%= f.password_field :password_confirmation, class:"form-control", placeholder:"password_confirmation" %>
 </div>
-<%= f.submit "Save changes", class: "btnbtn-primary" %>
+<%= f.submit "Save changes", class: "btn btn-primary" %>
 <% end %> 
 
 <div class="gravatar_edit">
