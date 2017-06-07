@@ -1,0 +1,21 @@
+
+<li id="cour-<%=cour.id %>">
+<%= link_to gravatar_for(cour.user), cour.user %>
+
+<span class="user">
+    <%= link_to cour.user.name, cour.user %>
+</span> 
+    
+<span class="content">
+    <%= cour.content %>
+</span>
+
+<span class="timestamp">
+Posted <%= time_ago_in_words(cour.created_at) %> ago.
+<% if current_user?(cour.user) %>
+<%= link_to "delete", cour, method: :delete,
+data: { confirm: "You sure?" } %>
+<% end %>
+</span>
+
+</li>

@@ -3,5 +3,17 @@
 <h1>
 <%= gravatar_for @user %>
 <%= @user.name %> </h1>
-</section> </aside>
+</section>
+</aside>
+
+<div class="col-md-8">
+<% if @user.cours.any? %>
+<h3>Cours (<%= @user.cours.count %>)</h3>
+<ol class="cours">
+<%= render @cours %>
+</ol>
+<%= will_paginate @cours %>
+<% end %>
+</div>
+
 </div>

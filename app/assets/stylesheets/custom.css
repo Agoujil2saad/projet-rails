@@ -108,7 +108,47 @@ footer{
     margin-top: 100px;
 }
 
- 
+.cours { 
+    list-style: none;
+padding: 0;}
 
+.cours li {
+ margin-top: 5em;
+border-top: 1px solid #e8e8e8; 
+    
+}
+.cours .user {
+margin-top: 5em;
+padding-top: 0; }
+
+.cours .content {
+display: block; 
+}
+
+.cours .content img {
+display: block;
+padding: 5px 0; }
+
+.cours .timestamp {
+color: gray; 
+display: block;
+margin-left: 0px;
+}
+.cours .gravatar {
+float: left; 
+ margin-top: 5px;
+}
+
+
+aside textarea {
+height: 100px;
+margin-bottom: 5px; }
+
+span.picture { 
+    margin-top: 10px; 
+}  
+
+span.picture   input {
+border: 0; }
 
 

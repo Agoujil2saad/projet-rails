@@ -1,10 +1,14 @@
 class User < ActiveRecord::Base
-    attr_accessor :remember_token
-    validates :name, presence: true , length:{maximum: 50}
+has_many :cours, dependent: :destroy
+
+
+
+attr_accessor :remember_token
+validates :name, presence: true , length:{maximum: 50}
     
-   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i 
+ VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i 
    
-   validates :email, presence: true, length: { maximum: 255 },
+ validates :email, presence: true, length: { maximum: 255 },
 format: { with: VALID_EMAIL_REGEX },uniqueness: { case_sensitive: false }
 
 has_secure_password
@@ -33,6 +37,10 @@ end
 # Forgets a user.
 def forget
     update_attribute(:remember_digest, nil)
+end
+
+def feed
+    Cour.where("user_id = ?", id)
 end
 
 end
