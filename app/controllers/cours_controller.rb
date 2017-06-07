@@ -21,7 +21,7 @@ end
 
 private
 def cour_params 
-    params.require(:cour).permit(:content)
+    params.require(:cour).permit(:content, :picture)
 end
 
 def correct_user

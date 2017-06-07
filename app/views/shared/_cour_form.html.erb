@@ -1,6 +1,8 @@
-<%= form_for(@cour) do |f| %>
+<%= form_for(@cour, html: { multipart: true }) do |f| %>
 <%= render 'shared/error_messages', object: f.object %> 
 <div class="field">
 <%= f.text_area :content, placeholder: "Composenewcour..." %> </div>
 <%= f.submit "Post", class: "btn btn-primary" %> 
+<span class="picture"> <%= f.file_field :picture %>
+</span>
 <% end %>
